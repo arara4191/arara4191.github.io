@@ -16,6 +16,3 @@ Welcome to my website! My name is Arantza Lira and its my pleasure to introduce 
 
 ---
 
-```{r}
-
-```
