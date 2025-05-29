@@ -1,11 +1,21 @@
 ---
-title: "arara4191.github.io"
+title: "Arantza Lira"
+image: media/bugpic.jpg
+toc: false
+about: 
+  template: jolla
+  image-shape: round
+  image-width: 17em
+  links:
+    - text: Email
+      href: mailto:alira@ucsb.edu
+---
+        
+# Welcome
+Welcome to my website! My name is Arantza Lira and its my pleasure to introduce myself to you! Feel free to navigate to the tabs on this page to learn more about my journey in Environmental Studies, projects, my resume and hobbies. 
+
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
 ```{r}
-1 + 1
+
 ```
