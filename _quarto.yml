@@ -18,8 +18,11 @@ format:
     theme:
       - cosmo
       - brand
-    css: styles.css
+      - style2.scss
+    mainfont: Noto Serif
     toc: true
+    pagelayout: full
+    css: style2.css
 
 editor: visual
 

@@ -9,10 +9,13 @@ about:
   links:
     - text: Email
       href: mailto:alira@ucsb.edu
+    - text: GitHub
+      href: https://github.com/arara4191
+      target: _blank 
 ---
-        
 # Welcome
-Welcome to my website! My name is Arantza Lira and its my pleasure to introduce myself to you! Feel free to navigate to the tabs on this page to learn more about my journey in Environmental Studies, projects, my resume and hobbies. 
-
+Welcome to my website! My name is Arantza Lira and its my pleasure to introduce myself to you! 
+Currently I'm a junior at UC Santa Barbara studying for my Bachelors of Science in Environmental Studies. Although I've spent the last three years near the beach, i grew up in the desert in a border town in southern California called Calexico. Although I cherish my hometown, the environmental health issues from unsustainable agricultural practices and climate impacts inspired me to pursue a degree in environmental studies focusing on food accessibility, agricultural systems and environmental data science. 
+As you learn more about my journey feel free to navigate to the tabs on this page to learn more about me,my projects, my resume and hobbies. 
 ---
 

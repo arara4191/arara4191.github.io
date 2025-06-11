@@ -1,14 +1,18 @@
 /*-- scss:defaults --*/
 
+//Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 // Colors
-$dark-green: #d5f5e3;
-$light-green: #d1f2eb;
+$dark-green: #0e6251;
+$light-green: #e8f5df;
 $cream: #FDFBF7;
-$salmon: #FA8072;
+$salmon: #942352;
 
 // Base document colors
 $navbar-bg: $salmon; // navbar
-$navbar-fg: $cream; // navbar foreground elements
+$navbar-fg: $light-green; // navbar foreground elements
 $navbar-hl: $light-green; // highlight color when hovering over navbar links
 $body-bg: $light-green; // page background 
 $body-color: $dark-green; // page text 

@@ -1,1 +1,15 @@
-/* css styles */
+/*-- scss:defaults --*/
+
+// Colors
+$dark-green: #d5f5e3;
+$light-green: #d1f2eb;
+$cream: #FDFBF7;
+$salmon: #FA8072;
+
+// Base document colors
+$navbar-bg: $salmon; // navbar
+$navbar-fg: $cream; // navbar foreground elements
+$navbar-hl: $light-green; // highlight color when hovering over navbar links
+$body-bg: $light-green; // page background 
+$body-color: $dark-green; // page text 
+$link-color: $dark-green; // hyperlinks
