@@ -32,7 +32,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "ENV S 193DS Visualization\n\n\n\n\n\n\n\n\n\n\n\nArantza Lira\n\n\n\n\n\n\nNo matching items"
+    "text": "UCSB Smithsonian Scholar\n\n\n\n\n\n\n\n\n\n\n\nArantza Lira\n\n\n\n\n\n\n\n\n\n\n\n\nENV S 193DS Visualization\n\n\n\n\n\n\n\n\n\n\n\nArantza Lira\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/stats/stats_file.html",
@@ -40,5 +40,12 @@
     "title": "ENV S 193DS Visualization",
     "section": "",
     "text": "During ENV S 193 DS, we had three homework assignments using data from ecological research and pollution data. This visualization is from homework 2. It uses data from the 2017-2018 Thomas Fire that burned 281,893 acres in Santa Barbara County and Ventura County areas. The figure below demonstrates the concentration of particulate matter in the Goleta and Santa Barbara area after the fire.\n\nData set up\n\n# installing and reading in packagaes\nlibrary(\"tidyverse\")\nlibrary(\"janitor\")\nlibrary(\"plotly\")\n\n# Reading in Thomas fire data\nsbpm &lt;- read_csv(\"C:/Users/arant/Desktop/ENV S 193DS-R/arara4191.github.io/posts/stats/sbpm.csv\")\n\n#data wrangling to seperate data points by location\ngol_sb &lt;- sbpm %&gt;%\nfilter(local_site_name %in%\nc(\"Goleta\", \"Santa Barbara\"))\n\n\n\nVisualization Code\n\n#creating markers\ndata_marker &lt;- gol_sb |&gt;  # calling dataframe \n  # create a new column/field called marker \n  mutate(marker = paste0(\"date: \", date, \"&lt;br&gt;\",# quoted words show the type of infor that will be displayed : data\n                         # &lt;br&gt; creates a line break in marker dispaly\n                         \"PM Concentration: \", pm2_5))\n\n\n\nthomas_plot &lt;- ggplot(data = data_marker, # calling dataframe\naes(x = local_site_name, # x-axis data\ny = pm2_5, # y-axis data\ncolor = local_site_name, # coloring by site\nshape = local_site_name)) +\ngeom_boxplot(aes(text = NULL)) + # first layer should be a boxplot\ngeom_jitter(aes(text = marker),width = 0.2, height = 0) + # making sure points don't jitter vertically\nlabs(x = \"Location\", # labelling the x-axis\ny = \"2.5 Concentration (ug/m^3 LC)\",\ncolor = \"Location Key\") + # labeling the y-axis\n# changing appearance: colors, labels, and theme\nscale_color_manual(values = c(\"Santa Barbara\" = \"purple\",\n\"Goleta\" = \"orange\")) +\ntheme_get()+\ntheme(legend.position = \"none\") # adding theme and legend condition\n\n\n#plotly package to make figure interactive\n# editing display\nthomas_int &lt;- ggplotly(thomas_plot, tooltip = \"text\") %&gt;%\n  plotly::layout(\n    font = list(family = \"Times\"),# editing the font for the marker hover-tex\n    hoverlabel = list(\n      hovermode = \"closest\",\n      font = list(\n        family = \"Times\",\n        size = 13,\n        color = \"#FFFFFF\"# font color\n      ),\n      align = \"left\" #indent\n    )\n  )\n\n\n\nThomas Fire Visualization\n\n#displaying plot\nthomas_int"
+  },
+  {
+    "objectID": "posts/research/research_file.html",
+    "href": "posts/research/research_file.html",
+    "title": "UCSB Smithsonian Scholar",
+    "section": "",
+    "text": "My first Year at UC Santa Barbara I became a part of the Smithsonian Scholars Program, where I participated in a 10-week program learning some of the basics of RStudio and traveling to Panama to learn how to conduct field work in tropical areas. Using data points of Panamanian coffee farms under the Bird Friendly Coffee Program initiative, I created a research poster exploring how biodiversity initiatives provide natural pest control in these farms."
   }
 ]
