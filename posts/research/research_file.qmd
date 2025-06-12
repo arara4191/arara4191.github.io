@@ -1,0 +1,8 @@
+---
+title: "UCSB Smithsonian Scholar"
+format: html
+---
+
+My first Year at UC Santa Barbara I became a part of the smithsonian Scholars Program where i participated in a 10 week program learning some of the basics of RStudio and traveling to Panama to learn how to conduct field work in tropical areas. Using data points of Panamanian coffee farms under the Bird Friendly Coffee Program initiative, I created a research poster exploring how biodiversity initiatives provide natural pest control in these farms.
+
+![](Arantza_Lira_Edison_Poster_2023_(1).jpg)

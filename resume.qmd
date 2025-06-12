@@ -2,4 +2,4 @@
 title: "Resume"
 ---
 
-[View my resume](docs/UCSB_LArantza_RESUME_web.pdf){target="_blank"} 
+[View my resume here ](docs/UCSB_LArantza_RESUME_web.pdf){target="_blank"} 
